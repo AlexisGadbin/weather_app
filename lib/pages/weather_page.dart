@@ -23,7 +23,8 @@ class _WeatherPageState extends State<WeatherPage> {
         _weather = weather;
       });
     } catch (e) {
-      print("Error: $e");
+      // ignore: avoid_print
+      print(e);
     }
   }
 
